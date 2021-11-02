@@ -1,7 +1,7 @@
 # YakData R 4.1.1 "on the Rocker"
 ##  Build R 4.1.1 with verse, tidyverse and the RStudio IDE (open source) in 3 progressive Docker containers.
 
-<img src="./Rlogo.svg" alt="R_Logo" style="zoom:10%;" />
+<img src="./R_logo.png" alt="R_Logo" style="zoom:10%;" />
 
  
   - [🎶 Features](#-features)
