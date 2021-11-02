@@ -7,7 +7,6 @@
   - [🎶 Features](#-features)
   - [🧰 Install](#-install)
   - [🔐 LICENSE](#-license)
-  - [⭐ Inspiration](#-inspiration)
   - [📫 Issues](#-issues)
   - [📘 Docs](#-docs)
   - [💼 Alternatives](#-alternatives)
@@ -114,7 +113,7 @@ Based on: https://github.com/rocker-org/rocker-versioned
 
 Do it yourself. Some people just like to do it all!
 
-Use rocker-versioned directly.
+Use https://github.com/rocker-org/rocker-versioned directly.
 
 ## 🧑‍💻 Discussion
 
