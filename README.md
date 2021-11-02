@@ -5,7 +5,7 @@
 
  
   - [🎶 Features](#-features)
-  - [🧰 Install and setup 🔒 SSL/TLS](#-install-and-setup--ssltls)
+  - [🧰 Install](#-install)
   - [🔐 LICENSE](#-license)
   - [⭐ Inspiration](#-inspiration)
   - [📫 Issues](#-issues)
@@ -29,7 +29,7 @@ r-4.1.1
     verse-r-4.1.1
         rstudio-verse-r-4.1.1
 
-## 🧰 Install and setup 🔒 SSL/TLS
+## 🧰 Install
 
 Logon to your server
 
