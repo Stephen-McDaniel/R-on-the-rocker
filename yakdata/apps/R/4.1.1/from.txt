@@ -1,0 +1,6 @@
+From https://github.com/rocker-org/rocker-versioned
+
+Modifications by Stephen McDaniel
+YakData, LLC
+(C)opyright 2021-OCT-11
+All changes under GPL-2 license

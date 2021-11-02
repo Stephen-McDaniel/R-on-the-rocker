@@ -1,0 +1,14 @@
+{
+  "target": {
+    "geospatial": {
+      "context": "./",
+      "dockerfile": "dockerfiles/geospatial_ubuntugis.Dockerfile",
+      "tags": [
+        "docker.io/rocker/geospatial:ubuntugis"
+      ],
+      "platforms": [
+        "linux/amd64"
+      ]
+    }
+  }
+}

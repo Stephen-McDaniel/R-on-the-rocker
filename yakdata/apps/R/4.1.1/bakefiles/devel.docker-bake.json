@@ -1,0 +1,118 @@
+{
+  "target": {
+    "r-ver": {
+      "context": "./",
+      "dockerfile": "dockerfiles/r-ver_devel.Dockerfile",
+      "tags": [
+        "docker.io/rocker/r-ver:devel"
+      ],
+      "platforms": [
+        "linux/amd64"
+      ]
+    },
+    "rstudio": {
+      "context": "./",
+      "dockerfile": "dockerfiles/rstudio_devel.Dockerfile",
+      "tags": [
+        "docker.io/rocker/rstudio:devel"
+      ],
+      "platforms": [
+        "linux/amd64"
+      ]
+    },
+    "tidyverse": {
+      "context": "./",
+      "dockerfile": "dockerfiles/tidyverse_devel.Dockerfile",
+      "tags": [
+        "docker.io/rocker/tidyverse:devel"
+      ],
+      "platforms": [
+        "linux/amd64"
+      ]
+    },
+    "verse": {
+      "context": "./",
+      "dockerfile": "dockerfiles/verse_devel.Dockerfile",
+      "tags": [
+        "docker.io/rocker/verse:devel"
+      ],
+      "platforms": [
+        "linux/amd64"
+      ]
+    },
+    "geospatial": {
+      "context": "./",
+      "dockerfile": "dockerfiles/geospatial_devel.Dockerfile",
+      "tags": [
+        "docker.io/rocker/geospatial:devel"
+      ],
+      "platforms": [
+        "linux/amd64"
+      ]
+    },
+    "shiny": {
+      "context": "./",
+      "dockerfile": "dockerfiles/shiny_devel.Dockerfile",
+      "tags": [
+        "docker.io/rocker/shiny:devel"
+      ],
+      "platforms": [
+        "linux/amd64"
+      ]
+    },
+    "shiny-verse": {
+      "context": "./",
+      "dockerfile": "dockerfiles/shiny-verse_devel.Dockerfile",
+      "tags": [
+        "docker.io/rocker/shiny-verse:devel"
+      ],
+      "platforms": [
+        "linux/amd64"
+      ]
+    },
+    "binder": {
+      "context": "./",
+      "dockerfile": "dockerfiles/binder_devel.Dockerfile",
+      "tags": [
+        "docker.io/rocker/binder:devel"
+      ],
+      "platforms": [
+        "linux/amd64"
+      ]
+    },
+    "cuda": {
+      "context": "./",
+      "dockerfile": "dockerfiles/cuda_devel.Dockerfile",
+      "tags": [
+        "docker.io/rocker/r-ver:devel-cuda10.1",
+        "docker.io/rocker/cuda:devel-cuda10.1",
+        "docker.io/rocker/cuda:devel"
+      ],
+      "platforms": [
+        "linux/amd64"
+      ]
+    },
+    "ml": {
+      "context": "./",
+      "dockerfile": "dockerfiles/ml_devel.Dockerfile",
+      "tags": [
+        "docker.io/rocker/ml:devel-cuda10.1",
+        "docker.io/rocker/ml:devel"
+      ],
+      "platforms": [
+        "linux/amd64"
+      ]
+    },
+    "ml-verse": {
+      "context": "./",
+      "dockerfile": "dockerfiles/ml-verse_devel.Dockerfile",
+      "tags": [
+        "docker.io/rocker/ml-verse:devel-cuda10.1",
+        "docker.io/rocker/ml-verse:devel"
+      ],
+      "platforms": [
+        "linux/amd64"
+      ]
+    }
+  }
+}

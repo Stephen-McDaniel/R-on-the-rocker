@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+
+  r-4.1.1:
+    container_name: r-4.1.1
+    image: yakdata/r-4.1.1
+    volumes:
+      - ../site-library:/usr/local/lib/R/site-library
+    build:
+      context: .
+      dockerfile: dockerfiles/r-4.1.1.Dockerfile
+
+  verse-r-4.1.1:
+    container_name: verse-r-4.1.1
+    image: yakdata/verse-r-4.1.1
+    depends_on:
+    - r-4.1.1
+    volumes:
+      - ../site-library:/usr/local/lib/R/site-library
+    build:
+      context: .
+      dockerfile: dockerfiles/verse-r-4.1.1.Dockerfile
+
+  rstudio-verse-r-4.1.1:
+    container_name: rstudio-verse-r-4.1.1
+    image: yakdata/rstudio-verse-r-4.1.1
+    depends_on:
+    - verse-r-4.1.1
+    volumes:
+      - ../site-library:/usr/local/lib/R/site-library
+    build:
+      context: .
+      dockerfile: dockerfiles/rstudio-verse-r-4.1.1.Dockerfile
