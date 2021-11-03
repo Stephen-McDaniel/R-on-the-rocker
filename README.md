@@ -75,6 +75,8 @@ IMPORTANT- ensure that you have your terminal session set to send an ASCII code 
 ```bash
 cd /yakdata/apps/R/4.1.1
 
+mkdir /yakdata/apps/logs-docker-compose-builds
+
 (
 docker-compose build r-4.1.1
 ) 2>&1 |& tee /yakdata/apps/logs-docker-compose-builds/R-r-4.1.1.log
