@@ -70,9 +70,9 @@ chmod +x /yakdata/apps/R/4.1.1/scripts/*.sh
 
 Run the Docker Compose builds. Total time to install may take 10 minutes to 2 hours, depending on your host system performance.
 
-```bash
-(
+IMPORTANT- ensure that you have your terminal session set to send an ASCII code when idle or similar setting. On the Mac with iTerm2, this is under Session -> Edit Session -> pick the session from the list -> Session -> "When idle, send ASCII code...". Otherwise, the builds may time out and fail.
 
+```bash
 (
 docker-compose build r-4.1.1
 ) 2>&1 |& tee /yakdata/apps/logs-docker-compose-builds/R-r-4.1.1.log
@@ -84,8 +84,6 @@ docker-compose build verse-r-4.1.1
 (
 docker-compose build rstudio-verse-r-4.1.1
 ) 2>&1 |& tee /yakdata/apps/logs-docker-compose-builds/R-rstudio-verse-r-4.1.1.log 
-
-) &
 ```
 
 NOTE
