@@ -19,17 +19,17 @@
 
 The structure of the Dockerfiles in rocker-versioned is:
 
-r411
-    rstudio
-        tidyverse
-            verse
-                rstudiofinal
+r411<br>
+  rstudio<br>
+    tidyverse<br>
+      verse<br>
+        rstudiofinal<br>
 
 Here, it has been simplified to:
 
-r-4.1.1
-    verse-r-4.1.1
-        rstudio-verse-r-4.1.1
+r-4.1.1<br>
+  verse-r-4.1.1<br>
+    rstudio-verse-r-4.1.1<br>
 
 ## 🧰 Install and setup 🔒 SSL/TLS
 
