@@ -5,8 +5,9 @@
 
  
   - [🎶 Features](#-features)
-  - [🧰 Install](#-install)
+  - [🧰 Install and setup 🔒 SSL/TLS](#-install-and-setup--ssltls)
   - [🔐 LICENSE](#-license)
+  - [⭐ Inspiration](#-inspiration)
   - [📫 Issues](#-issues)
   - [📘 Docs](#-docs)
   - [💼 Alternatives](#-alternatives)
@@ -14,21 +15,23 @@
   
 ## 🎶 Features
 
-* This is based on the Rocker project. It has been modified for use in [YakData/SmartManager-for-ShinyProxy] (https://github.com/YakData/SmartManager-for-ShinyProxy)
+* This is based on the Rocker project. It has been modified for use in [YakData/SmartManager-for-ShinyProxy](https://github.com/Stephen-McDaniel/SmartManager-for-ShinyProxy)
 
 The structure of the Dockerfiles in rocker-versioned is:
+
 r411
-    rstudio
-        tidyverse
-            verse
-                rstudiofinal
+    rstudio
+        tidyverse
+            verse
+                rstudiofinal
 
 Here, it has been simplified to:
-r-4.1.1
-    verse-r-4.1.1
-        rstudio-verse-r-4.1.1
 
-## 🧰 Install
+r-4.1.1
+    verse-r-4.1.1
+        rstudio-verse-r-4.1.1
+
+## 🧰 Install and setup 🔒 SSL/TLS
 
 Logon to your server
 
@@ -44,7 +47,7 @@ Upload /yakdata/apps from this repository to /yakdata/
 
 ```bash
 # from local to server
-dir_local="/path/to/downloaded/and/unzippped/repo/"
+dir_local="/path/to/downloaded/and/unzippped/repo/yakdata/apps/"
 dir_remote=/yakdata/apps
 keyfile='/path/to/your/pem/my.pem'
 host=my.host.com
@@ -65,11 +68,9 @@ cd /yakdata/apps/R/4.1.1
 chmod +x /yakdata/apps/R/4.1.1/scripts/*.sh
 ```
 
-Install may take 10 minutes to 2 hours, depending on your host system performance.
+Run the Docker Compose builds. Total time to install may take 10 minutes to 2 hours, depending on your host system performance.
 
 ```bash
-#!/bin/bash
-
 (
 
 (
@@ -85,7 +86,6 @@ docker-compose build rstudio-verse-r-4.1.1
 ) 2>&1 |& tee /yakdata/apps/logs-docker-compose-builds/R-rstudio-verse-r-4.1.1.log 
 
 ) &
-
 ```
 
 NOTE
@@ -95,7 +95,7 @@ By default, the R packages will install from the RSPM repository, with a date of
 CRAN=https://packagemanager.rstudio.com/cran/2021-09-22+MTo1MTg0MzM5O0Q4MjI2M0Y
 ```
 
-Command output will echo to the session where you started the installation. If you like, you can connect with a second SSH session and watch the log at /yakdata/apps/logs-docker-compose-builds/R.log
+Command output will echo to the session where you started the installation. If you like, you can connect with a second SSH session and watch the logs at /yakdata/apps/logs-docker-compose-builds
 
 ## 🔐 LICENSE
 
@@ -113,7 +113,7 @@ Based on: https://github.com/rocker-org/rocker-versioned
 
 Do it yourself. Some people just like to do it all!
 
-Use https://github.com/rocker-org/rocker-versioned directly.
+Use rocker-versioned directly.
 
 ## 🧑‍💻 Discussion
 
