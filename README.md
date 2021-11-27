@@ -15,7 +15,7 @@
   
 ## 🎶 Features
 
-* This is based on the Rocker project. It has been modified for use in [YakData/SmartManager-for-ShinyProxy](https://github.com/Stephen-McDaniel/SmartManager-for-ShinyProxy)
+This is based on the Rocker project. It has been modified for use in [YakData/SmartManager-for-ShinyProxy](https://github.com/Stephen-McDaniel/SmartManager-for-ShinyProxy)
 
 The structure of the Dockerfiles in rocker-versioned is:
 
